@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>タスク管理</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <form>
+        <input
+          type="text"
+          id="task-input"
+          placeholder="タスクを入力してください"
+          maxlength="10"
+        />
+        <button id="add-button" class="material-icons add" type="submit">
+          add
+        </button>
+      </form>
+      <div id="board-container">
+        <div class="board">
+          <div class="board-title">タスク</div>
+          <div id="task-board" class="board-content"></div>
+        </div>
+        <div class="board">
+          <div class="board-title">実行中</div>
+          <div id="doing-board" class="board-content"></div>
+        </div>
+        <div class="board">
+          <div class="board-title">完了</div>
+          <div id="done-board" class="board-content"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
